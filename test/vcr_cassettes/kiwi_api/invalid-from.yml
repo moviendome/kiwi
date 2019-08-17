@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kiwicom-prod.apigee.net/v2/search?fly_from=invalid-from
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - "<API_KEY>"
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 422
+      message: Unprocessable Entity
+    headers:
+      Date:
+      - Fri, 16 Aug 2019 08:43:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '87'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc0434d803a148119fa5525885d57ffdc1565945009; expires=Sat, 15-Aug-20
+        08:43:29 GMT; path=/; domain=.skypicker.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept, Authorization, Content-Type, User-Agent,
+        Referer, Origin, X-Application, X-WHOIAM, X-WHOIAM-SESSION, KW-Simple-Token,
+        KW-User-Token, apikey, x-forter, KW-Auth-Token, Accept-Language
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 50721ef27deccddf-CDG
+      Access-Control-Max-Age:
+      - '3628800'
+    body:
+      encoding: UTF-8
+      string: '{"message":[{"param":"fly_from","errors":["Not recognized location:
+        `invalid-from`"]}]}'
+    http_version: 
+  recorded_at: Fri, 16 Aug 2019 08:43:29 GMT
+recorded_with: VCR 5.0.0

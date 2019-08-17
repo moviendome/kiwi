@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kiwicom-prod.apigee.net/locations/query?location_types=airport
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - "<API_KEY>"
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 16 Aug 2019 10:07:38 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '16'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6e2e234d6d4efe981c626cd227263ba21565950057; expires=Sat, 15-Aug-20
+        10:07:37 GMT; path=/; domain=.skypicker.com; HttpOnly
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      Cf-Cache-Status:
+      - MISS
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 50729a355d733c21-CDG
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept, Authorization, Content-Type, User-Agent,
+        Referer, Origin, X-Application, X-WHOIAM, X-WHOIAM-SESSION, KW-Simple-Token,
+        KW-User-Token, apikey, x-forter, KW-Auth-Token, Accept-Language
+      Access-Control-Max-Age:
+      - '3628800'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH
+    body:
+      encoding: UTF-8
+      string: '400: Bad Request'
+    http_version: 
+  recorded_at: Fri, 16 Aug 2019 10:07:38 GMT
+recorded_with: VCR 5.0.0

@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kiwicom-prod.apigee.net/v2/search
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - "<API_KEY>"
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Fri, 16 Aug 2019 10:19:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '143'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d1cb3429192bd8cf325b8ddebe0aeb8471565950735; expires=Sat, 15-Aug-20
+        10:18:55 GMT; path=/; domain=.skypicker.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept, Authorization, Content-Type, User-Agent,
+        Referer, Origin, X-Application, X-WHOIAM, X-WHOIAM-SESSION, KW-Simple-Token,
+        KW-User-Token, apikey, x-forter, KW-Auth-Token, Accept-Language
+      Via:
+      - 1.1 google
+      Alt-Svc:
+      - clear
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5072aac3dcdbb7cf-CDG
+      Access-Control-Max-Age:
+      - '3628800'
+    body:
+      encoding: UTF-8
+      string: '{"message":[{"param":"fly_from","errors":["Field fly_from cannot be
+        anywhere or unspecified when fly_to is either anywhere or unspecified."]}]}'
+    http_version: 
+  recorded_at: Fri, 16 Aug 2019 10:19:23 GMT
+recorded_with: VCR 5.0.0

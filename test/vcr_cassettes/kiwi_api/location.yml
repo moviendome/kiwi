@@ -1,0 +1,245 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://kiwicom-prod.apigee.net/locations/query?term=Madrid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - "<API_KEY>"
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 16 Aug 2019 09:51:32 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d489acbda843b5ef64dfcd7a9f037075c1565949092; expires=Sat, 15-Aug-20
+        09:51:32 GMT; path=/; domain=.skypicker.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Fri, 16 Aug 2019 13:51:32 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 507282a2ff1bcdbb-CDG
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept, Authorization, Content-Type, User-Agent,
+        Referer, Origin, X-Application, X-WHOIAM, X-WHOIAM-SESSION, KW-Simple-Token,
+        KW-User-Token, apikey, x-forter, KW-Auth-Token, Accept-Language
+      Access-Control-Max-Age:
+      - '3628800'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"locations":[{"id":"madrid_es","active":true,"name":"Madrid","slug":"madrid-spain","code":"MAD","alternative_names":[],"rank":1,"global_rank_dst":0,"dst_popularity_score":4464444.0,"timezone":"Europe\/Madrid","population":3255944,"airports":1,"stations":3,"hotels":3623,"bus_stations":1,"subdivision":null,"autonomous_territory":null,"country":{"id":"ES","name":"Spain","slug":"spain","code":"ES"},"region":{"id":"southern-europe","name":"Southern
+        Europe","slug":"southern-europe"},"continent":{"id":"europe","name":"Europe","slug":"europe","code":"EU"},"location":{"lat":40.416775,"lon":-3.70379},"tags":[{"tag":"nightlife","month_to":-1,"month_from":-1},{"tag":"sightseeing&culture","month_to":-1,"month_from":-1}],"alternative_departure_points":[{"id":"EEM","distance":254.84,"duration":10551},{"id":"ES-MADR-MAD0","distance":5.78,"duration":738.9},{"id":"ES-MADR-MADR","distance":4.75,"duration":539.9},{"id":"ES-SALA-SALA","distance":215.23,"duration":9074.4},{"id":"MAD","distance":23.35,"duration":1424.6},{"id":"RGS","distance":249.2,"duration":10503.6},{"id":"SLM","distance":197.0,"duration":8378.3},{"id":"VLL","distance":218.58,"duration":9256.1},{"id":"XJI","distance":187.23,"duration":8238.6},{"id":"XJJ","distance":254.79,"duration":10556.9},{"id":"XJN","distance":187.86,"duration":8491.5},{"id":"XJO","distance":226.88,"duration":9369.7},{"id":"XJU","distance":240.67,"duration":10130.8},{"id":"XOC","distance":2.14,"duration":284},{"id":"XOU","distance":90.32,"duration":4190.5},{"id":"XTI","distance":7.51,"duration":787.7},{"id":"XTJ","distance":73.43,"duration":3403.9}],"providers":[1035,1064,1096,1111,1138,1148,1163,1175,1179],"car_rentals":[{"provider_id":1175,"providers_locations":["1136088","464588","1516661","164444"]},{"provider_id":1175,"providers_locations":["475358","464523","2606176","475333","464558","1346633","2804226","1013326","475373","3957065","1346693","2982541","1346513","475343","464568","4161757"]}],"type":"city"},{"id":"MAD","int_id":2594,"active":true,"code":"MAD","icao":"LEMD","name":"Adolfo
+        Su\u00e1rez Madrid\u2013Barajas","slug":"adolfo-suarez-madrid-barajas-madrid-spain","alternative_names":["Aeropuerto
+        de Madrid-Barajas","Madrid (Adolfo Suarez Barajas)"],"rank":1,"global_rank_dst":0,"dst_popularity_score":4463577.0,"timezone":"Europe\/Madrid","city":{"id":"madrid_es","name":"Madrid","code":"MAD","slug":"madrid-spain","subdivision":null,"autonomous_territory":null,"country":{"id":"ES","name":"Spain","slug":"spain","code":"ES"},"region":{"id":"southern-europe","name":"Southern
+        Europe","slug":"southern-europe"},"continent":{"id":"europe","name":"Europe","slug":"europe","code":"EU"}},"location":{"lat":40.493611,"lon":-3.566667},"alternative_departure_points":[{"id":"XJJ","distance":262.03,"duration":10745.4},{"id":"EEM","distance":262.09,"duration":10739.5},{"id":"RGS","distance":240.74,"duration":9797.1},{"id":"XJU","distance":232.2,"duration":9424.3},{"id":"XJI","distance":205.66,"duration":8840.2},{"id":"ECV","distance":32.01,"duration":1648.9},{"id":"XOC","distance":21.69,"duration":1258.9},{"id":"XTI","distance":14.42,"duration":908.4},{"id":"SLM","distance":209.85,"duration":8850.8},{"id":"XOU","distance":103.17,"duration":4663},{"id":"XJO","distance":223.23,"duration":9065.2},{"id":"XTJ","distance":91.86,"duration":4005.5},{"id":"TOJ","distance":20.2,"duration":1498.5},{"id":"VLL","distance":231.43,"duration":9728.6},{"id":"XJN","distance":200.71,"duration":8964},{"id":"XIV","distance":201.22,"duration":9022.6}],"tags":[{"tag":"nightlife","month_to":-1,"month_from":-1},{"tag":"sightseeing&culture","month_to":-1,"month_from":-1}],"providers":[1096,1111,1148,1163,1175,1179],"special":[{"id":"plaza-mayor_poi","name":"Plaza
+        Mayor","slug":"plaza-mayor"},{"id":"museo-del-prado_poi","name":"Museo Del
+        Prado","slug":"museo-del-prado"},{"id":"segovia_poi","name":"Segovia","slug":"segovia"}],"tourist_region":[],"car_rentals":[{"provider_id":1175,"providers_locations":["464588","1136088","1516661","164444"]}],"type":"airport"},{"id":"CLQ","int_id":8285,"active":true,"code":"CLQ","icao":"MMIA","name":"Colima","slug":"colima-colima-mexico","alternative_names":["Aeropuerto
+        Nacional Licenciado Miguel de la Madrid"],"rank":53,"global_rank_dst":37,"dst_popularity_score":7659.0,"timezone":"America\/Mexico_City","city":{"id":"colima_mx","name":"Colima","code":"CLQ","slug":"colima-mexico","subdivision":null,"autonomous_territory":null,"country":{"id":"MX","name":"Mexico","slug":"mexico","code":"MX"},"region":{"id":"central-america","name":"Central
+        America","slug":"central-america"},"continent":{"id":"north-america","name":"North
+        America","slug":"north-america","code":"NA"}},"location":{"lat":19.276944,"lon":-103.5775},"alternative_departure_points":[{"id":"GDL","distance":197.89,"duration":9594.5},{"id":"ZLO","distance":155.03,"duration":7239.6}],"tags":[{"tag":"nature","month_to":-1,"month_from":-1}],"providers":[1175],"special":[],"tourist_region":[],"car_rentals":[{"provider_id":1175,"providers_locations":["4162465"]}],"type":"airport"},{"id":"XOC","int_id":10287,"active":true,"code":"XOC","icao":null,"name":"Madrid
+        Atocha railway station","slug":"madrid-atocha-railway-station-madrid-spain","alternative_names":["Estaci\u00f3n
+        de Atocha"],"rank":1024,"global_rank_dst":78,"dst_popularity_score":379.0,"timezone":"Europe\/Madrid","city":{"id":"madrid_es","name":"Madrid","code":"MAD","slug":"madrid-spain","subdivision":null,"autonomous_territory":null,"country":{"id":"ES","name":"Spain","slug":"spain","code":"ES"},"region":{"id":"southern-europe","name":"Southern
+        Europe","slug":"southern-europe"},"continent":{"id":"europe","name":"Europe","slug":"europe","code":"EU"}},"location":{"lat":40.405833,"lon":-3.690833},"alternative_departure_points":[{"id":"MAD","distance":22.95,"duration":1343.9},{"id":"XJJ","distance":253.05,"duration":10386.5},{"id":"EEM","distance":253.1,"duration":10380.6},{"id":"RGS","distance":250.25,"duration":10422},{"id":"XJU","distance":241.72,"duration":10049.2},{"id":"XJI","distance":186.37,"duration":8166.7},{"id":"ECV","distance":12.78,"duration":987.6},{"id":"XTI","distance":8.17,"duration":877.7},{"id":"SLM","distance":199.04,"duration":8482.6},{"id":"XOU","distance":92.36,"duration":4294.8},{"id":"XJO","distance":227.96,"duration":9319.9},{"id":"XTJ","distance":72.56,"duration":3332},{"id":"TOJ","distance":27.35,"duration":1766.8},{"id":"VLL","distance":220.62,"duration":9360.4},{"id":"XJN","distance":189.9,"duration":8595.8},{"id":"XIV","distance":190.41,"duration":8654.4}],"tags":[],"providers":[1064,1138,1148,1179],"special":[{"id":"plaza-mayor_poi","name":"Plaza
+        Mayor","slug":"plaza-mayor"},{"id":"museo-del-prado_poi","name":"Museo Del
+        Prado","slug":"museo-del-prado"},{"id":"segovia_poi","name":"Segovia","slug":"segovia"}],"tourist_region":[],"car_rentals":[],"type":"station"},{"id":"ES-MADR-MAD0","int_id":681,"active":true,"code":"ES-MADR-MAD0","icao":null,"name":"Madrid
+        Avenida de America - Bus Station","slug":"madrid-avenida-de-america-bus-station-madrid-spain","alternative_names":[],"rank":1024,"global_rank_dst":1024,"dst_popularity_score":0.0,"timezone":"Europe\/Madrid","city":{"id":"madrid_es","name":"Madrid","code":"MAD","slug":"madrid-spain","subdivision":null,"autonomous_territory":null,"country":{"id":"ES","name":"Spain","slug":"spain","code":"ES"},"region":{"id":"southern-europe","name":"Southern
+        Europe","slug":"southern-europe"},"continent":{"id":"europe","name":"Europe","slug":"europe","code":"EU"}},"location":{"lat":40.437989,"lon":-3.676581},"alternative_departure_points":[{"id":"XOC","distance":8.25,"duration":850},{"id":"XTI","distance":7.22,"duration":736},{"id":"MAD","distance":18.29,"duration":1149},{"id":"XOU","distance":93.48,"duration":4559},{"id":"XTJ","distance":81.91,"duration":3815},{"id":"XJN","distance":191.01,"duration":8860},{"id":"XJI","distance":195.72,"duration":8650},{"id":"SLM","distance":200.15,"duration":8746},{"id":"VLL","distance":221.74,"duration":9624},{"id":"ES-SALA-SALA","distance":218.39,"duration":9442},{"id":"XJO","distance":222.74,"duration":9086},{"id":"XJU","distance":236.69,"duration":9867},{"id":"RGS","distance":245.22,"duration":10240},{"id":"EEM","distance":256.74,"duration":10665},{"id":"XJJ","distance":256.68,"duration":10671}],"tags":[],"providers":[1035,1096,1111,1138,1163],"special":[],"tourist_region":[],"car_rentals":[],"type":"bus_station"},{"id":"XTI","int_id":10286,"active":true,"code":"XTI","icao":null,"name":"Madrid
+        Chamart\u00edn railway station","slug":"madrid-chamartin-railway-station-madrid-spain","alternative_names":["Estaci\u00f3n
+        de Madrid-Chamart\u00edn"],"rank":1024,"global_rank_dst":105,"dst_popularity_score":46.0,"timezone":"Europe\/Madrid","city":{"id":"madrid_es","name":"Madrid","code":"MAD","slug":"madrid-spain","subdivision":null,"autonomous_territory":null,"country":{"id":"ES","name":"Spain","slug":"spain","code":"ES"},"region":{"id":"southern-europe","name":"Southern
+        Europe","slug":"southern-europe"},"continent":{"id":"europe","name":"Europe","slug":"europe","code":"EU"}},"location":{"lat":40.473889,"lon":-3.6825},"alternative_departure_points":[{"id":"MAD","distance":18.64,"duration":1106.5},{"id":"XJJ","distance":259.75,"duration":10733.7},{"id":"EEM","distance":259.81,"duration":10727.8},{"id":"RGS","distance":241.63,"duration":9970.8},{"id":"XJU","distance":233.1,"duration":9598},{"id":"XJI","distance":198.78,"duration":8712.1},{"id":"ECV","distance":23.41,"duration":1508.8},{"id":"XOC","distance":11.32,"duration":912.2},{"id":"SLM","distance":197.69,"duration":8406.2},{"id":"XOU","distance":91.02,"duration":4218.4},{"id":"XJO","distance":225.95,"duration":9226.1},{"id":"XTJ","distance":84.98,"duration":3877.4},{"id":"TOJ","distance":25.34,"duration":1673},{"id":"VLL","distance":219.27,"duration":9284},{"id":"XJN","distance":188.55,"duration":8519.4},{"id":"XIV","distance":189.06,"duration":8578}],"tags":[],"providers":[1064,1148,1179],"special":[{"id":"segovia_poi","name":"Segovia","slug":"segovia"},{"id":"museo-del-prado_poi","name":"Museo
+        Del Prado","slug":"museo-del-prado"},{"id":"plaza-mayor_poi","name":"Plaza
+        Mayor","slug":"plaza-mayor"}],"tourist_region":[],"car_rentals":[],"type":"station"},{"id":"ES-MADR-MADR","int_id":679,"active":true,"code":"ES-MADR-MADR","icao":null,"name":"Madrid-  M\u00e9ndez
+        \u00c1lvaro","slug":"madrid-madrid-spain","alternative_names":[],"rank":1024,"global_rank_dst":1024,"dst_popularity_score":0.0,"timezone":"Europe\/Madrid","city":{"id":"madrid_es","name":"Madrid","code":"MAD","slug":"madrid-spain","subdivision":null,"autonomous_territory":null,"country":{"id":"ES","name":"Spain","slug":"spain","code":"ES"},"region":{"id":"southern-europe","name":"Southern
+        Europe","slug":"southern-europe"},"continent":{"id":"europe","name":"Europe","slug":"europe","code":"EU"}},"location":{"lat":40.395255,"lon":-3.677876},"alternative_departure_points":[{"id":"XOC","distance":2.67,"duration":330},{"id":"XTI","distance":12.11,"duration":812},{"id":"MAD","distance":22.81,"duration":1238},{"id":"XTJ","distance":72.84,"duration":3304},{"id":"XOU","distance":96.45,"duration":4344},{"id":"XJI","distance":186.65,"duration":8139},{"id":"XJN","distance":193.99,"duration":8645},{"id":"SLM","distance":203.13,"duration":8531},{"id":"VLL","distance":224.71,"duration":9409},{"id":"ES-SALA-SALA","distance":221.36,"duration":9228},{"id":"XJO","distance":227.82,"duration":9214},{"id":"XJU","distance":241.57,"duration":9943},{"id":"RGS","distance":250.1,"duration":10316},{"id":"EEM","distance":253.23,"duration":10331},{"id":"XJJ","distance":253.17,"duration":10336}],"tags":[],"providers":[1035,1096,1111,1138,1163],"special":[],"tourist_region":[],"car_rentals":[],"type":"station"}],"meta":{"locale":{"code":"en-US","status":"Locale
+        not specified, using default."}},"last_refresh":1565852223}'
+    http_version: 
+  recorded_at: Fri, 16 Aug 2019 09:51:32 GMT
+- request:
+    method: get
+    uri: https://kiwicom-prod.apigee.net/locations/query?location_types=airport&term=Madrid
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - "<API_KEY>"
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 16 Aug 2019 09:58:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d30179af14c4fc96e14c53a0ff0b883f31565949503; expires=Sat, 15-Aug-20
+        09:58:23 GMT; path=/; domain=.skypicker.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Fri, 16 Aug 2019 13:58:23 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 50728caa1bb2a8df-CDG
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept, Authorization, Content-Type, User-Agent,
+        Referer, Origin, X-Application, X-WHOIAM, X-WHOIAM-SESSION, KW-Simple-Token,
+        KW-User-Token, apikey, x-forter, KW-Auth-Token, Accept-Language
+      Access-Control-Max-Age:
+      - '3628800'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"locations":[{"id":"MAD","int_id":2594,"active":true,"code":"MAD","icao":"LEMD","name":"Adolfo
+        Su\u00e1rez Madrid\u2013Barajas","slug":"adolfo-suarez-madrid-barajas-madrid-spain","alternative_names":["Aeropuerto
+        de Madrid-Barajas","Madrid (Adolfo Suarez Barajas)"],"rank":1,"global_rank_dst":0,"dst_popularity_score":4463577.0,"timezone":"Europe\/Madrid","city":{"id":"madrid_es","name":"Madrid","code":"MAD","slug":"madrid-spain","subdivision":null,"autonomous_territory":null,"country":{"id":"ES","name":"Spain","slug":"spain","code":"ES"},"region":{"id":"southern-europe","name":"Southern
+        Europe","slug":"southern-europe"},"continent":{"id":"europe","name":"Europe","slug":"europe","code":"EU"}},"location":{"lat":40.493611,"lon":-3.566667},"alternative_departure_points":[{"id":"XJJ","distance":262.03,"duration":10745.4},{"id":"EEM","distance":262.09,"duration":10739.5},{"id":"RGS","distance":240.74,"duration":9797.1},{"id":"XJU","distance":232.2,"duration":9424.3},{"id":"XJI","distance":205.66,"duration":8840.2},{"id":"ECV","distance":32.01,"duration":1648.9},{"id":"XOC","distance":21.69,"duration":1258.9},{"id":"XTI","distance":14.42,"duration":908.4},{"id":"SLM","distance":209.85,"duration":8850.8},{"id":"XOU","distance":103.17,"duration":4663},{"id":"XJO","distance":223.23,"duration":9065.2},{"id":"XTJ","distance":91.86,"duration":4005.5},{"id":"TOJ","distance":20.2,"duration":1498.5},{"id":"VLL","distance":231.43,"duration":9728.6},{"id":"XJN","distance":200.71,"duration":8964},{"id":"XIV","distance":201.22,"duration":9022.6}],"tags":[{"tag":"nightlife","month_to":-1,"month_from":-1},{"tag":"sightseeing&culture","month_to":-1,"month_from":-1}],"providers":[1096,1111,1148,1163,1175,1179],"special":[{"id":"plaza-mayor_poi","name":"Plaza
+        Mayor","slug":"plaza-mayor"},{"id":"museo-del-prado_poi","name":"Museo Del
+        Prado","slug":"museo-del-prado"},{"id":"segovia_poi","name":"Segovia","slug":"segovia"}],"tourist_region":[],"car_rentals":[{"provider_id":1175,"providers_locations":["464588","1136088","1516661","164444"]}],"type":"airport"},{"id":"CLQ","int_id":8285,"active":true,"code":"CLQ","icao":"MMIA","name":"Colima","slug":"colima-colima-mexico","alternative_names":["Aeropuerto
+        Nacional Licenciado Miguel de la Madrid"],"rank":53,"global_rank_dst":37,"dst_popularity_score":7659.0,"timezone":"America\/Mexico_City","city":{"id":"colima_mx","name":"Colima","code":"CLQ","slug":"colima-mexico","subdivision":null,"autonomous_territory":null,"country":{"id":"MX","name":"Mexico","slug":"mexico","code":"MX"},"region":{"id":"central-america","name":"Central
+        America","slug":"central-america"},"continent":{"id":"north-america","name":"North
+        America","slug":"north-america","code":"NA"}},"location":{"lat":19.276944,"lon":-103.5775},"alternative_departure_points":[{"id":"GDL","distance":197.89,"duration":9594.5},{"id":"ZLO","distance":155.03,"duration":7239.6}],"tags":[{"tag":"nature","month_to":-1,"month_from":-1}],"providers":[1175],"special":[],"tourist_region":[],"car_rentals":[{"provider_id":1175,"providers_locations":["4162465"]}],"type":"airport"}],"meta":{"locale":{"code":"en-US","status":"Locale
+        not specified, using default."}},"last_refresh":1565852223}'
+    http_version: 
+  recorded_at: Fri, 16 Aug 2019 09:58:23 GMT
+- request:
+    method: get
+    uri: https://kiwicom-prod.apigee.net/locations/query?location_types=airport&term=Chiang%20Mai
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - "<API_KEY>"
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 16 Aug 2019 10:00:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc41f8702690f423e994eba43dd12e93d1565949602; expires=Sat, 15-Aug-20
+        10:00:02 GMT; path=/; domain=.skypicker.com; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; preload
+      Cf-Cache-Status:
+      - MISS
+      Expires:
+      - Fri, 16 Aug 2019 14:00:02 GMT
+      Cache-Control:
+      - public, max-age=14400
+      Accept-Ranges:
+      - bytes
+      X-Content-Type-Options:
+      - nosniff
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Accept-Encoding
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 50728f198c2068dc-CDG
+      Access-Control-Allow-Headers:
+      - origin, x-requested-with, accept, Authorization, Content-Type, User-Agent,
+        Referer, Origin, X-Application, X-WHOIAM, X-WHOIAM-SESSION, KW-Simple-Token,
+        KW-User-Token, apikey, x-forter, KW-Auth-Token, Accept-Language
+      Access-Control-Max-Age:
+      - '3628800'
+      Access-Control-Allow-Methods:
+      - GET, PUT, POST, DELETE, PATCH
+    body:
+      encoding: ASCII-8BIT
+      string: '{"locations":[{"id":"CNX","int_id":8648,"active":true,"code":"CNX","icao":"VTCC","name":"Chiang
+        Mai International","slug":"chiang-mai-international-chiang-mai-thailand","alternative_names":["\u0e17\u0e48\u0e32\u0e2d\u0e32\u0e01\u0e32\u0e28\u0e22\u0e32\u0e19\u0e40\u0e0a\u0e35\u0e22\u0e07\u0e43\u0e2b\u0e21\u0e48"],"rank":7,"global_rank_dst":3,"dst_popularity_score":671054.0,"timezone":"Asia\/Bangkok","city":{"id":"chiang-mai_th","name":"Chiang
+        Mai","code":"CNX","slug":"chiang-mai-thailand","subdivision":null,"autonomous_territory":null,"country":{"id":"TH","name":"Thailand","slug":"thailand","code":"TH"},"region":{"id":"south-eastern-asia","name":"South-Eastern
+        Asia","slug":"south-eastern-asia"},"continent":{"id":"asia","name":"Asia","slug":"asia","code":"AS"}},"location":{"lat":18.771389,"lon":98.962778},"alternative_departure_points":[{"id":"LPT","distance":105.39,"duration":6092.5},{"id":"PYY","distance":134.38,"duration":8792.9}],"tags":[{"tag":"sightseeing&culture","month_to":-1,"month_from":-1}],"providers":[1175],"special":[],"tourist_region":[{"id":"chiang-mai-province_poi","name":"Chiang
+        Mai Province","slug":"chiang-mai-province"},{"id":"northern-thailand_poi","name":"Northern
+        Thailand","slug":"northern-thailand"}],"car_rentals":[{"provider_id":1175,"providers_locations":["4024767"]}],"type":"airport"},{"id":"CEI","int_id":4631,"active":true,"code":"CEI","icao":"VTCT","name":"Chiang
+        Rai International","slug":"chiang-rai-international-chiang-rai-province-thailand","alternative_names":["\u0e17\u0e48\u0e32\u0e2d\u0e32\u0e01\u0e32\u0e28\u0e22\u0e32\u0e19\u0e41\u0e21\u0e48\u0e1f\u0e49\u0e32\u0e2b\u0e25\u0e27\u0e07
+        \u0e40\u0e0a\u0e35\u0e22\u0e07\u0e23\u0e32\u0e22"],"rank":29,"global_rank_dst":14,"dst_popularity_score":67717.0,"timezone":"Asia\/Bangkok","city":{"id":"chiang-rai-province_th","name":"Chiang
+        Rai Province","code":"CEI","slug":"chiang-rai-province-thailand","subdivision":null,"autonomous_territory":null,"country":{"id":"TH","name":"Thailand","slug":"thailand","code":"TH"},"region":{"id":"south-eastern-asia","name":"South-Eastern
+        Asia","slug":"south-eastern-asia"},"continent":{"id":"asia","name":"Asia","slug":"asia","code":"AS"}},"location":{"lat":19.952222,"lon":99.883056},"alternative_departure_points":[{"id":"HOE","distance":102.01,"duration":7471.2},{"id":"KET","distance":221.18,"duration":10286.6},{"id":"MOG","distance":162.35,"duration":8862.8},{"id":"THL","distance":69.47,"duration":3658.9}],"tags":[{"tag":"nature","month_to":-1,"month_from":-1},{"tag":"romance","month_to":-1,"month_from":-1}],"providers":[1175],"special":[],"tourist_region":[{"id":"northern-thailand_poi","name":"Northern
+        Thailand","slug":"northern-thailand"}],"car_rentals":[{"provider_id":1175,"providers_locations":["4024768"]}],"type":"airport"}],"meta":{"locale":{"code":"en-US","status":"Locale
+        not specified, using default."}},"last_refresh":1565852223}'
+    http_version: 
+  recorded_at: Fri, 16 Aug 2019 10:00:03 GMT
+recorded_with: VCR 5.0.0

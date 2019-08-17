@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    build: .
+    command: ./run.sh
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/app
+      - bundle_cache:/bundle
+    environment:
+      - API_KEY=${API_KEY}
+volumes:
+  bundle_cache:
